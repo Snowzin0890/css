@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'android';
+    src: url(/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    height: 20vh;
+    background-image: linear-gradient(to bottom,#3DDB84,#2FA866,#1A5C37);
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 3px 4px 2px rgba(0, 0, 0, 0.479);
+}
+
+nav{
+    margin-top: 40px;
+}
+
+nav>a:hover{
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+header>nav>a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    text-align: left;
+}
+
+header>h1, p{
+    text-align: center;
+}
+
+header>h1{
+    font-size: 3em;
+}
+
+header>p{
+    opacity: 0.7;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #83E1AD;
+}
+
+main{
+    background-color: white;
+    color: black;
+    width: 40%;
+    margin: 0px 0px 0px 30%;
+}
+
+section{
+    padding: 15px 10px;
+}
+
+article>p{
+    text-indent: 25px;
+    text-align: justify;
+}
+
+section>h1{
+    color: #1A5C37;
+    font-family: 'android', Arial, Helvetica, sans-serif;
+}
+
+section>h2{
+    color: #1A5C37;
+    background-image: linear-gradient(to right, #83E1AD, #ffff);
+    font-family: 'android', Arial, Helvetica, sans-serif;
+}
+
+span{
+    color: #2FA866;
+    font-weight: bold;
+}
+
+.link{
+    color: #2FA866;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link::after{
+    content: '🧷';
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.img>img{
+    width: 38.5vw;
+}
+
+.video{
+    background-color: #355C47;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer{
+    background-color: #355C47;
+}
+
+footer>p{
+    color: white;
+    padding: 5px;
+    margin: 16px 0px 0px 0px;
+}
+
+.box{
+    border-radius: 10px;
+    background-color: #83e1ad6e;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+}
+
+.box>h3{
+    background-color: #2FA866;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    margin: 0px;
+    padding: 5px;
+}
+
+.box>article>p{
+    padding: 10px;
+}
+
+.d12{
+    display: flex;
+}
+
+ul>li::before{
+    content: '✅';
+}
+
+li>a{
+    color: black;
+}
