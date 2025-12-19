@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        body{
+            background-image: url(imagens/wallpaper001.jpg) ;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .quadrado{
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+        }
+
+        #q1{
+            background-image: url(imagens/pattern001.png);
+        }
+
+        #q2{
+            background-image: url(imagens/pattern002.png);
+        }
+
+        #q3{
+            background-image: url(imagens/pattern003.png);
+        }
+
+        .container02{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .retangulo{
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 95%;
+            height: 200px;
+        }
+
+        .pai{
+            display: block;
+            min-width: 200px;
+            max-width: 1000px;
+        }
+
+        .position{
+            position: relative;
+            top: 200px;
+            left: 50%;
+        }
+
+        #r1{
+            background-image: url(imagens/wallpaper002.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="position">
+            <div class="container">
+                <div class="quadrado" id="q1"></div>
+                <div class="quadrado" id="q2"></div>
+                <div class="quadrado" id="q3"></div>
+            </div>
+            <div class="container02">
+                <div class="retangulo" id="r1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
