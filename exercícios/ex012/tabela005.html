@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+        th {
+            background-color: #383838;
+            color: white;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        thead {
+            background-color: #f2f2f2;
+        }
+        tfoot {
+            background-color: #383838;
+            color: white;
+            font-weight: bold;
+        }
+        .cgrupo {
+            background-color: #d1e7dd;
+            width: 20%;
+        }
+        .cnomes {
+            background-color: #f8d7da;
+            width: 30%;
+        }
+        .cfilmes1 {
+            background-color: #cff4fc;
+            width: 16.66%;
+        }
+        .cfilmes2 {
+            background-color: #e2e3e5;
+            width: 16.66%;
+        }
+        .cfilmes3 {
+            background-color: #fff3cd;
+            width: 16.66%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cgrupo">
+            <col class="cnomes">
+            <col class="cfilmes1">
+            <col class="cfilmes2">
+            <col class="cfilmes3">
+        </colgroup>
+        <thead>
+            <tr>
+                <caption>Filmes Favoritos</caption>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="col-group" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row-group" rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Carla Dias</td>
+                <td>Titanic</td>
+                <td>Avatar</td>
+                <td>Interestelar</td>
+            </tr>
+            <tr>
+                <th scope="row-group" rowspan="3">Homens</th>
+                <td>Daniel Oliveira</td>
+                <td>Matrix</td>
+                <td>Gladiador</td>
+                <td>Clube da Luta</td>
+            </tr>
+            <tr>
+                <td>Eduardo Lima</td>
+                <td>Star Wars</td>
+                <td>Senhor dos Anéis</td>
+                <td>Duro de Matar</td>
+            </tr>
+            <tr>
+                <td>Felipe Costa</td>
+                <td>Jurassic Park</td>
+                <td>Piratas do Caribe</td>
+                <td>O Resgate do Soldado Ryan</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="5">Fonte: Pesquisa Interna 2024</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

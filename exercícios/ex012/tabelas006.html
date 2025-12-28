@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+            width: 1000px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        caption {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .cproduto {
+            width: 60%;
+        }
+        .cpreco {
+            width: 25%;
+        }
+        .cquantidade {
+            width: 15%;
+        }
+        .container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Responsivas</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ad quibusdam dolor iusto nulla in maxime, atque laboriosam ab neque quos odit eaque architecto similique voluptas illo labore aliquid doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aperiam velit exercitationem. Assumenda mollitia voluptates voluptatem commodi dolore! Reprehenderit animi quidem aliquam nulla, magni quae voluptatem ex ad nam debitis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui error quas exercitationem, architecto dolor inventore neque corrupti maiores, quae voluptate cupiditate quo odit voluptates voluptatem consectetur optio facilis voluptatibus suscipit!</p>
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col class="cproduto">
+                <col class="cpreco">
+                <col class="cquantidade">
+            </colgroup>
+            <caption>Produtos</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Notebook</td>
+                    <td>R$ 3.000,00</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Smartphone</td>
+                    <td>R$ 1.500,00</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Tablet</td>
+                    <td>R$ 800,00</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total de Itens</td>
+                    <td>22</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
