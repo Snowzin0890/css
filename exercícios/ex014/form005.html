@@ -11,12 +11,43 @@
         <div>
             <label for="estado">Estado:</label>
             <select name="estado" id="estado">
-                <optgroup>
-                    o
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG" >Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE">Ceará</option>
                 </optgroup>
             </select>
         </div>
-
+        <br>
+        <div>
+            <label for="profissao">Profissão:</label>
+            <input type="text" name="profissao" id="profissao" list="lista-profissao" placeholder="Digite ou escolha">
+            <datalist id="lista-profissao">
+                <option value="Engenheiro"></option>
+                <option value="Médico"></option>
+                <option value="Professor"></option>
+                <option value="Advogado"></option>
+                <option value="Designer"></option>
+            </datalist>
+        </div>
+        <br>
+        <div>
+            <label for="mensagem">Mensagem:</label>
+            <br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="5" maxlength="2000"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="arquivo">Enviar arquivo:</label>
+            <input type="file" name="arquivo" id="arquivo" accept=".pdf, .doc, .docx, image/*">
+        </div>
+        <br>
         <div>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
