@@ -1,0 +1,45 @@
+/* Estilo para telas */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+}
+
+nav>ul{
+    display: flex;
+    list-style: none;
+    margin-left: 5px;
+    gap: 10px;
+}
+
+li{
+    cursor: pointer;
+    background-color: #0f0f0f;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+article{
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+article>h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
