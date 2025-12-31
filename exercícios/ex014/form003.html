@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="#" method="post" autocomplete="on">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="digite seu nome"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@gmail.com"><br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="0" max="120" step="0.5" required placeholder="0 a 120"><br><br>
+
+        <label for="mes">Período letivo:</label>
+        <input type="month" name="mes" id="mes" required><br><br>
+
+        <label for="dia">Dia da prova:</label>
+        <input type="date" name="dia" id="dia" required><br><br>
+
+        <label for="hora">Horário da prova:</label>
+        <input type="time" name="hora" id="hora"><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
