@@ -8,23 +8,23 @@
 <body>
     <h1>Teste de Formulário</h1>
     <form action="#" method="post" autocomplete="on">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="digite seu nome"><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@gmail.com"><br><br>
-
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" min="0" max="120" step="0.5" required placeholder="0 a 120"><br><br>
-
-        <label for="mes">Período letivo:</label>
-        <input type="month" name="mes" id="mes" required><br><br>
-
-        <label for="dia">Dia da prova:</label>
-        <input type="date" name="dia" id="dia" required><br><br>
-
-        <label for="hora">Horário da prova:</label>
-        <input type="time" name="hora" id="hora"><br><br>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="digite seu nome"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@gmail.com"><br><br>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="0" max="120" step="0.5" required placeholder="0 a 120"><br><br>
+            <label for="tel">Telefone:</label>
+            <input type="tel" id="tel" name="tel" required autocomplete="tel" placeholder="(xx) xxxxx-xxxx" min-length="10" maxlength="12"><br><br>
+            <label for="mes">Período letivo:</label>
+            <input type="month" name="mes" id="mes" required><br><br>
+            <label for="dia">Dia da prova:</label>
+            <input type="date" name="dia" id="dia" required><br><br>
+            <label for="hora">Horário da prova:</label>
+            <input type="time" name="hora" id="hora"><br><br>
+        </fieldset><br>
 
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
