@@ -1,0 +1,66 @@
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #celular, #impressora, #computador, #tv{
+        display: none;
+    }
+    #tablet{display: block;}
+
+    body{
+        background: black url(../imagens/back-tablet.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    #celular, #tablet, #tv, #impressora{
+        display: none;
+    }
+    #computador{display: block;}
+
+    body{
+        background: black url(../imagens/back-pc.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1201px){
+    #celular, #tablet, #computador, #impressora{
+        display: none;
+    }
+    #tv{display: block;}
+
+    body{
+        background: black url(../imagens/back-tv.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+@media print{
+    #celular, #tablet, #computador, #tv{
+        display: none;
+    }
+    #impressora{display: block;}
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        width: 90%;
+        border: 2px solid black;
+    }
+
+    main>h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    main::after{
+        content: " - Impressão - ";
+        display: block;
+        text-align: center;
+        text-decoration: overline;
+        font-size: 0.8em;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+}
