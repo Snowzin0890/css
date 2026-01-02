@@ -90,7 +90,6 @@ body{
     #email:focus,#senha:focus{
         background-color: aqua;
         outline: 2px solid aquamarine;
-    
     }
    }
 }
